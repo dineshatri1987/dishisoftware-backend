@@ -56,6 +56,7 @@ If the account is a Google Workspace user (custom domain), the Workspace admin m
 | `SMTP_PASS` | **yes** | `abcdwxyzefghijkl` | Google App Password for that account |
 | `MAIL_FROM` | recommended | `Dishi Software <support@dishisoftware.com>` | `From` header on outgoing mail |
 | `MAIL_TO` | recommended | `support@dishisoftware.com` | Inbox that receives contact form submissions (defaults to `SMTP_USER`) |
+| `CORS_ORIGINS` | **yes (in prod)** | `https://dishisoftware.com,https://www.dishisoftware.com` | Comma-separated list of frontend origins allowed to call this API. Requests from other origins are blocked. |
 
 ## Scripts
 
