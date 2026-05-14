@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "PowerShell(npm install)",
+      "PowerShell(npm audit --json)",
+      "PowerShell($env:PORT=\"3737\"; $proc = Start-Process -FilePath \"node\" -ArgumentList \"src/index.js\" -PassThru -NoNewWindow -RedirectStandardOutput \"smoke.out\" -RedirectStandardError \"smoke.err\"; Start-Sleep -Seconds 2; try { $r = Invoke-RestMethod -Uri \"http://localhost:3737/health\" -TimeoutSec 5; $r | ConvertTo-Json } catch { \"REQ_ERR: $\\($_.Exception.Message\\)\" }; Stop-Process -Id $proc.Id -Force; Get-Content smoke.out; if \\(Test-Path smoke.err\\) { \"---STDERR---\"; Get-Content smoke.err }; Remove-Item smoke.out, smoke.err -ErrorAction SilentlyContinue)",
+      "PowerShell(npx tsc --noEmit)"
+    ]
+  }
+}
