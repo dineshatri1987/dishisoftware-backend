@@ -1,7 +1,7 @@
 {
-  "name": "dishisoftware-backend",
+  "name": "divoratechnology-backend",
   "version": "1.0.0",
-  "description": "Backend API for Dishi Software",
+  "description": "Backend API for Divora Technology",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

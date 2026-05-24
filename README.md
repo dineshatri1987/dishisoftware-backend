@@ -1,4 +1,4 @@
-# Dishi Software Backend
+# Divora Technology Backend
 
 Node.js + TypeScript + Express backend exposing a contact form endpoint that sends email via Gmail SMTP.
 
@@ -30,7 +30,7 @@ tsconfig.json           strict TypeScript config, outputs to dist/
 
 ```bash
 git clone <repo-url>
-cd dishisoftware-backend
+cd divoratechnology-backend
 npm install
 cp .env.example .env
 ```
@@ -52,11 +52,11 @@ If the account is a Google Workspace user (custom domain), the Workspace admin m
 | Name | Required | Example | Purpose |
 |---|---|---|---|
 | `PORT` | no | `3000` | HTTP port (defaults to 3000) |
-| `SMTP_USER` | **yes** | `support@dishisoftware.com` | Gmail address that authenticates to SMTP |
+| `SMTP_USER` | **yes** | `support@divoratechnology.com` | Gmail address that authenticates to SMTP |
 | `SMTP_PASS` | **yes** | `abcdwxyzefghijkl` | Google App Password for that account |
-| `MAIL_FROM` | recommended | `Dishi Software <support@dishisoftware.com>` | `From` header on outgoing mail |
-| `MAIL_TO` | recommended | `support@dishisoftware.com` | Inbox that receives contact form submissions (defaults to `SMTP_USER`) |
-| `CORS_ORIGINS` | **yes (in prod)** | `https://dishisoftware.com,https://www.dishisoftware.com` | Comma-separated list of frontend origins allowed to call this API. Requests from other origins are blocked. |
+| `MAIL_FROM` | recommended | `Divora Technology <support@divoratechnology.com>` | `From` header on outgoing mail |
+| `MAIL_TO` | recommended | `support@divoratechnology.com` | Inbox that receives contact form submissions (defaults to `SMTP_USER`) |
+| `CORS_ORIGINS` | **yes (in prod)** | `https://divoratechnology.com,https://www.divoratechnology.com` | Comma-separated list of frontend origins allowed to call this API. Requests from other origins are blocked. |
 
 ## Scripts
 
